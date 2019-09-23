@@ -1,0 +1,84 @@
+===============================
+1. Newton Second Law
+===============================
+
+Algorithm
+1. Set 'mass' as variable with value
+2. Set 'acceleration' as variable with value
+3. The 'result' value coming from variable 'mass' multiplication variable 'acceleration'
+4. Display the 'result'
+
+Pseudocode
+SET variable 'mass' to 600kg
+SET variable 'acceleration' to 2 m/s2
+CALCULATE 'result' from 'mass' multiplication 'acceleration'
+DISPLAY the 'result' 
+
+
+===============================
+2. Tahun Kabisat (Leap Year)
+===============================
+
+Algorithm
+1. Set 'year' as variable with value
+2. Check if 'year' is 'leap year' or not with function
+3. If year modulus 4 is zero and year modulus 100 is not zero, year is 'leap year'
+4. If year modulus 4 / 100 / 400, year is 'leap year'
+
+Pseudocode
+SET 'year' with value
+IF 'year' modulus 4 is zero and modulus 100 is not zero 
+    SHOW 'year is a leap year'
+ELSE IF 'year' modulus 4 is zero and 'year' modulus 100 is zero and 'year' modulus 400 is zero
+    SHOW 'year is a leap year'
+ELSE 
+    SHOW 'year is not a leap year'
+END
+
+
+===============================
+3. Laundry Day
+===============================
+
+Algorithm
+1. Set 'basket' as variable with value
+2. Set 'clothes' as variable with value
+3. Add 'clothes' one by one to washer and reduce the 'basket' value
+4. If 'clothes' value equals with 'washer' value 'turn on the washer'
+
+Pseudocode
+SET variable 'basket' to 20
+SET variable 'clothes' to 0
+SET variable 'washer' with value false
+WHILE 'basket' is not zero
+    INCREMENT 'clothes' value by 1
+    DECREMENT 'basket' value by 1
+    IF 'clothes' value equal to 20
+        SET 'washer' variable to true
+    ELSE IF 
+        SET 'washer' variable to false
+    END IF
+END WHILE 
+
+
+===============================
+4. Periksa Kuku
+===============================
+
+Algorithm
+1. Set 'totalStudent' as a variable with value
+2. Set 'checkedStudent' as a new variable
+3. Run loops inspection until the 'checkedStudent' count reach the 'totalStudent; value
+4. If 'checkedStudent' have a long nails set value with 'punish the student'
+5. If 'checkedStudent' have a short nails set value with 'praise the student'
+
+Pseudocode
+SET variable 'totalStudent' to 40
+WHILE 'checkedStudent' count not equal to 'totalStudent'
+    IF 'checkedStudent' have a 'long nails'
+        SHOW 'punish the student'
+    ELSE IF 'checkedStudent' have a 'short nails'
+        SHOW 'praise the student'
+    INCREMENT 'checkedStudent' by 1
+    END IF
+END WHILE
