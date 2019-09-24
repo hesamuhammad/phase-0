@@ -5,8 +5,6 @@ for (i = 0; i < rows1; i++){
 console.log('*')
 }
 
-// do loops to display asterisks in the console.
-
 // 2. Menyusun Barisan Bintang Dengan Nested Looping
 
 var rows2 = 5 ; // input the number of rows
@@ -30,4 +28,3 @@ for (i = 0; i < rows3; i++){
     }
     console.log(tmp)
     }
-// do loops to display asterisks in the console.
