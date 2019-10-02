@@ -7,8 +7,8 @@ function tentukanDeretGeometri(arr) {
         if (firstInterval === secondInterval){
             return true;
         } else {
-        return false;
-        }   
+            return false;
+    }   
   }
   
   // TEST CASES
