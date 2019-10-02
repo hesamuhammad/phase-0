@@ -1,14 +1,14 @@
 function palindrome(kata) {
     // you can only write your code here!
-    var reversedWord = '';
-    for(var i = kata.length -1; i >= 0; i--){
-        reversedWord += kata[i]
+    var reverseWord = '';
+    for (var i = kata.length - 1; i >= 0; i--){
+        reverseWord += kata[i];
     }
-    //console.log(reversedWord)
-    if (kata === reversedWord){
-        return true;
-    } else 
-        return false;
+
+    if (reverseWord === kata)
+        return true
+    else
+        return false
   }
   
   // TEST CASES
