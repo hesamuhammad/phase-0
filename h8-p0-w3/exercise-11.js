@@ -1,10 +1,15 @@
 function tentukanDeretAritmatika(arr) {
     // you can only write your code here!
+    var result = true
     for (i = 0; i < arr.length - 2; i++){
         var firstInterval = arr[i + 1] - arr[i];
         var secondInterval = arr[i + 2] - arr[i + 1]
+        if (firstInterval !== secondInterval) {
+            result = false;
+            break;
+        }
     }
-        if (firstInterval === secondInterval){
+        if (result){
             return true;
         } else {
             return false;
