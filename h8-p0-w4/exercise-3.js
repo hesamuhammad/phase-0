@@ -1,5 +1,14 @@
 function cariMedian(arr) {
     // you can only write your code here!
+    var median = 0;
+    var length = arr.length;
+
+    if (length % 2 === 0){
+      median = (arr[length / 2 - 1] + arr[length / 2]) / 2
+    } else {
+      median = arr[Math.floor(length / 2)]
+    }
+    return median;
   }
   
   // TEST CASES
