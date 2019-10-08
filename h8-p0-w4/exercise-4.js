@@ -1,5 +1,11 @@
 function cariModus(arr) {
     // you can only write your code here!
+    var modus;
+    var angkaKeluar = 0;
+
+    for (var i = 0; i < arr.length; i++){
+      
+    }
   }
   
   // TEST CASES
