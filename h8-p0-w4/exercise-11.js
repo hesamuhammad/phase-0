@@ -35,6 +35,7 @@ function shoppingTime(memberId, money) {
     return obj;
   }
   
+  
   // TEST CASES
   console.log(shoppingTime('1820RzKrnWn08', 2475000));
     //{ memberId: '1820RzKrnWn08',
