@@ -1,5 +1,30 @@
 function graduates (students) {
     // Code disini
+    var tmpGroup = [];
+    for (var i = 0; i < students.length; i++){
+        for (var j = 0; j <= tmpGroup.length; j++){
+          if (students[i].score > 75){
+            if (tmpGroup[j] === undefined){
+            tmpGroup[j] = [];
+            tmpGroup[j].push(students[i]);
+            break;
+          } else if (tmpGroup[j][0].class === students[i].class){
+            tmpGroup[j].push(students[i]);
+              break;
+          }
+        }
+      }
+    }
+
+    var result = {};
+    for (var k = 0; k < tmpGroup.length; k++){
+      var batch = tmpGroup[k][0].class;
+      for (var l = 0; l < tmpGroup[k].length; l++){
+        delete tmpGroup[k][l].class;
+      }
+      result[batch] = tmpGroup[k];
+    }
+    return result 
   }
   
   console.log(graduates([
