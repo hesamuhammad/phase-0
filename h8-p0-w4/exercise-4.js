@@ -1,11 +1,28 @@
 function cariModus(arr) {
     // you can only write your code here!
     var modus;
-    var angkaKeluar = 0;
+    var numAppear = 0;
 
     for (var i = 0; i < arr.length; i++){
-      
+      var tmpNum = 0
+
+      for (var j = 0; j < arr.length; j++){
+        if (arr [i] === arr[j] && j !== i){
+          tmpNum++
+          if (tmpNum > numAppear){
+            numAppear = tmpNum
+            modus = arr[i];
+          }
+          if (tmpNum === arr.length - 1){
+            return -1;
+          }
+        }
+      }
     }
+    if (modus === undefined){
+      return -1
+    }
+    return modus;
   }
   
   // TEST CASES
