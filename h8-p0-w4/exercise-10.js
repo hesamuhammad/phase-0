@@ -3,7 +3,7 @@ function changeMe(arr) {
     var number = 1;
 
     if (arr.length === 0) {
-      console.log('');
+      console.log(`${number}. ${arr[i][0]} ${arr[i][1]}`);
     } else {
       for (var i = 0; i < arr.length; i++){
         var obj = {};
