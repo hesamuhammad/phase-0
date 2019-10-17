@@ -1,14 +1,25 @@
 function palindrome(kata) {
     // you can only write your code here!
+    // var reverseWord = '';
+    // for (var i = kata.length - 1; i >= 0; i--){
+    //     reverseWord += kata[i];
+    // }
+
+    // if (reverseWord === kata)
+    //     return true
+    // else
+    //     return false
+
     var reverseWord = '';
     for (var i = kata.length - 1; i >= 0; i--){
         reverseWord += kata[i];
     }
 
-    if (reverseWord === kata)
+    if (reverseWord === kata){
         return true
-    else
+    } else {
         return false
+    }
   }
   
   // TEST CASES

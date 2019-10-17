@@ -47,6 +47,7 @@ function dataHandling2(input){
         default:
             console.log('Invalid Input');
             break;
+            
     }
 
     //line 3

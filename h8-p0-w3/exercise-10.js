@@ -6,8 +6,9 @@ function perkalianUnik(arr) {
     for (var i = 0; i < arr.length; i++){
         total *= arr[i];
     }
+    console.log(total)
 
-    for ( i = 0; i < arr.length; i++){
+    for (var i = 0; i < arr.length; i++){
         result[i] = total / arr[i];
     }
     return result

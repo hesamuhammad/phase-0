@@ -4,6 +4,8 @@ function tentukanDeretAritmatika(arr) {
     for (i = 0; i < arr.length - 2; i++){
         var firstInterval = arr[i + 1] - arr[i];
         var secondInterval = arr[i + 2] - arr[i + 1]
+        // console.log(firstInterval);
+        // console.log(secondInterval)
         if (firstInterval !== secondInterval) {
             result = false;
             break;

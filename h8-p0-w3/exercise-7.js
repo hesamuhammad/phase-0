@@ -2,7 +2,7 @@ function hitungJumlahKata(kalimat) {
     // you can only write your code here!
     var count = 1; // word minimum
     for (i = 0; i < kalimat.length; i++){
-        if (kalimat[i] === ' ') {
+        if (kalimat[i] === ' ' || kalimat[i] === '-') {
             count++;
         }
     }

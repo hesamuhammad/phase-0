@@ -8,10 +8,12 @@ function angkaPalindrome(num) {
     for (i = string.length - 1; i >= 0; i--){
         reversedString += string[i];
     }
+
     if (string === reversedString)
         return Number(string);
     else 
         return angkaPalindrome(num);
+
   }
   
   // TEST CASES
