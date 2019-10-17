@@ -1,5 +1,23 @@
 function deepSum (arr) {
     // Code disini
+    var result = 0;
+
+    if (arr[0] === undefined){
+      return 'No number'
+    } 
+
+    for (var i = 0; i < arr.length; i++){
+      tmp = 0;
+      for (var j = 0; j < arr[i].length; j++){
+        tmp2 = 0;
+        for (var k = 0; k < arr[i][j].length; k++){
+          tmp2 += arr[i][j][k];
+        }
+        tmp += tmp2
+      }
+      result += tmp
+    }
+    return result;
   }
   
   //TEST CASE

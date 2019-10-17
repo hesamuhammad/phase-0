@@ -1,26 +1,21 @@
 function changeMe(arr) {
     // you can only write your code here!
-    var number = 1;
+    var num = 0;
+    var result = {};
 
-    if (arr.length === 0) {
-      console.log(`${number}. ${arr[i][0]} ${arr[i][1]}`);
-    } else {
-      for (var i = 0; i < arr.length; i++){
-        var obj = {};
-        obj.firstName = [i][0];
-        obj.lastName = [i][1];
-        obj.gender = [i][2];
-
-        if (arr[i][3] !== undefined){
-          obj.age = new Date().getFullYear() - arr[i][3];
-        } else {
-          obj.age = 'Invalid Birth Year'
-        }
-
-        console.log(obj);
-        number++
+    for (var i = 0; i < arr.length; i++){
+      result.firstName = arr[i][0];
+      result.lastName = arr[i][1];
+      result.gender = arr[i][2];
+      if (arr[i][3] === undefined){
+        result.age = 'Invalid Birth Year'
+      } else {
+        result.age = 2019 - arr[i][3];
       }
+      console.log((num += 1) + '. ' + result.firstName + ' ' + result.lastName);
+      console.log(result);
     }
+
 }
   
   
